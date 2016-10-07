@@ -13,11 +13,9 @@ export class AppComponent implements OnInit, AfterViewChecked {
 
     footer = '<p class="copyright">&copy; Andrei Gheorghiu</p>';
     articles:Article[];
-    tooltipHandle:string;
     tooltipConfig:string;
 
     constructor(private articleService:ArticleService) {
-        this.tooltipHandle = '<i class="fa fa-2x fa-question-circle" aria-hidden="true"></i>';
         this.tooltipConfig = 'hint--large hint--rounded hint--top-left';
     }
 

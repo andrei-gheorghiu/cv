@@ -14,7 +14,6 @@ var AppComponent = (function () {
     function AppComponent(articleService) {
         this.articleService = articleService;
         this.footer = '<p class="copyright">&copy; Andrei Gheorghiu</p>';
-        this.tooltipHandle = '<i class="fa fa-2x fa-question-circle" aria-hidden="true"></i>';
         this.tooltipConfig = 'hint--large hint--rounded hint--top-left';
     }
     AppComponent.prototype.getArticles = function () {
