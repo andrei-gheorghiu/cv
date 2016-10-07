@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Curriculum Vitae - Andrei Gheorghiu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./app/assets/css/hint.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="./app/assets/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="./app/assets/css/ie8.css"/><![endif]-->
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="./app/assets/js/jquery.min.js"></script>
+    <script src="./app/assets/js/skel.min.js"></script>
+    <script src="./app/assets/js/util.min.js"></script>
+    <script src="./app/assets/js/respond.min.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
+    </script>
+</head>
+
+<body class="is-loading-0 is-loading-1">
+<div id="wrapper" curriculumVitae>
+    <footer id="footer"><p class="copyright">&copy; Andrei Gheorghiu</p></footer>
+</div>
+<script type="application/javascript">
+    window.cvInit = function(){
+        if (!window.cvRun) {
+            window.setTimeout(function(){
+                var $panels, locked;
+                var $window = $(window), $document = $(document), $body = $('body'), $wrapper = $('#wrapper'), $footer = $('#footer');
+                window.setTimeout(function () {
+                    $body.removeClass('is-loading-0');
+                    window.setTimeout(function () {
+                        $body.removeClass('is-loading-1');
+                    }, 1500);
+                }, 100);
+                skel.breakpoints({
+                    xlarge: '(max-width: 1680px)',
+                    large: '(max-width: 1280px)',
+                    medium: '(max-width: 980px)',
+                    small: '(max-width: 736px)',
+                    xsmall: '(max-width: 480px)',
+                    xxsmall: '(max-width: 360px)'
+                });
+                $panels = $wrapper.children('.panel'), locked = true;
+                $('a.sectionButton').on('click', function(event){
+                   var $this = $(this),$panel = $this.parents('.panel').eq(0),$content = $panel.children('.content').eq(0);
+                    event.stopPropagation();
+                    event.preventDefault();
+                    if (locked)return;
+                    locked = true;
+                    if ($window.width() > 980) {
+                        $panel.addClass('invisible');
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 350);
+                    } else if ((90 > $window.scrollTop()) || ($window.scrollTop() > 150)) {
+                        $('html, body').animate({
+                            scrollTop: 120
+                        }, 350);
+                    }
+                    $content.addClass('invisible');
+                    window.setTimeout(function(){
+                        $content.removeClass('invisible');
+                        $panel.removeClass('invisible');
+                        locked = false;
+                    },420);
+
+                });
+
+                $('a[href^="#"]').on('click', function (event) {
+                    var $this = $(this), id = $(this).attr('href'), $panel = $(id), $ul = $this.parents('ul'), delay = 0;
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if (locked)return;
+                    locked = true;
+                    $this.addClass('active');
+                    if ($ul.hasClass('spinX') || $ul.hasClass('spinY'))delay = 250;
+                    window.setTimeout(function () {
+                        $panels.addClass('inactive');
+                        $footer.addClass('inactive');
+                        window.setTimeout(function () {
+                            $panels.hide();
+                            $panel.show();
+                            $document.scrollTop(0);
+                            window.setTimeout(function () {
+                                $panel.removeClass('inactive');
+                                $this.removeClass('active');
+                                locked = false;
+                                $window.triggerHandler('--refresh');
+                                window.setTimeout(function () {
+                                    $footer.removeClass('inactive');
+                                }, 250);
+                            }, 100);
+                        }, 350);
+                    }, delay);
+                });
+                $panels.not($panels.first()).addClass('inactive').hide();
+                $panels.each(function () {
+                    var $this = $(this), $image = $this.children('.image'), $img = $image.find('img'), position = $img.data('position');
+                    $image.css('background-image', 'url(' + $img.attr('src') + ')');
+                    if (position)$image.css('background-position', position);
+                    $img.hide();
+                });
+                window.setTimeout(function () {
+                    locked = false;
+                }, 1250);
+                if (skel.vars.IEVersion < 12) {
+                    $window.on('--refresh', function () {
+                        $wrapper.css('height', 'auto');
+                        window.setTimeout(function () {
+                            var h = $wrapper.height(), wh = $window.height();
+                            if (h < wh)$wrapper.css('height', '100vh');
+                        }, 0);
+                        if (skel.vars.IEVersion < 10) {
+                            var $panel = $('.panel').not('.inactive'), $image = $panel.find('.image'), $content = $panel.find('.content'), ih = $image.height(), ch = $content.height(), x = Math.max(ih, ch);
+                            $image.css('min-height', x + 'px');
+                            $content.css('min-height', x + 'px');
+                        }
+                    });
+                    $window.on('load', function () {
+                        $window.triggerHandler('--refresh');
+                    });
+                    $('.spinX').removeClass('spinX');
+                    $('.spinY').removeClass('spinY');
+                }
+            }, 250);
+            window.cvRun = true;
+        }
+    };
+</script>
+</body>
+</html>

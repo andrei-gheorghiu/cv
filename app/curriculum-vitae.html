@@ -1,0 +1,200 @@
+<article *ngFor="let article of articles"
+         [attr.id]="article.id"
+         [attr.class]="article.classes.join(' ')">
+    <div class="image"
+         [ngStyle]="{'background':'transparent url('+article.image+') center center no-repeat /cover'}">
+        <div [ngClass]="{'content':true,'homeTitle':article.id=='home'}"
+             *ngIf="article.sections || article.id=='home'">
+            <div class="inner"
+                 *ngIf="article.id=='home'">
+                <h1>Curriculum Vitae</h1>
+            </div>
+            <div class="inner"
+                 *ngIf="article.sections">
+                <header *ngIf="article.sections">
+                    <h1 [innerHTML]="article.header.title"></h1>
+                    <p [innerHTML]="article.header.subtitle"></p></header>
+                <ul class="actions vertical spinX">
+                    <li *ngFor="let section of article.sections" >
+                        <a (click)="activateSection(section,article)"
+                           [ngClass]="{'button':true,'sectionButton':true,'active':section.active}"
+                           [innerHTML]="section.label"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img [attr.src]="article.image"
+             [attr.alt]="article.header.title"
+             data-position="center center"
+             style="display: none;">
+    </div>
+    <div class="content">
+        <a href="#home"
+           class="menuButton spinY"
+           *ngIf="article.id!=='home'"></a>
+        <div class="inner" *ngIf="article.activeSection">
+            <header>
+                <h1 [innerHTML]="article.activeSection.label"></h1>
+                <p *ngIf="article.activeSection.firstSubtitle"
+                   [innerHTML]="article.activeSection.firstSubtitle"
+                   class="smaller"></p>
+                <p *ngIf="article.activeSection.secondSubtitle"
+                   [innerHTML]="article.activeSection.secondSubtitle"
+                   class="smaller"></p>
+            </header>
+            <fieldset *ngIf="article.activeSection.business">
+                <legend>Business</legend>
+                <div [innerHTML]="article.activeSection.business"></div>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.activity">
+                <legend>Activity</legend>
+                <ul>
+                    <li *ngFor="let act of article.activeSection.activity"
+                        [innerHTML]="act"></li>
+                </ul>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.technology">
+                <legend>Technology</legend>
+                <div [innerHTML]="article.activeSection.technology.join(', ')"></div>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.languages">
+                <legend>Languages</legend>
+                <div [innerHTML]="article.activeSection.languages.join(', ')"></div>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.programmingSkills">
+                <legend>Programming Skills</legend>
+                <ul>
+                    <li *ngFor="let skill of article.activeSection.programmingSkills"
+                        [innerHTML]="skill"></li>
+                </ul>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.organizationalSkills">
+                <legend>Organizational Skills</legend>
+                <ul>
+                    <li *ngFor="let skill of article.activeSection.organizationalSkills"
+                        [innerHTML]="skill"></li>
+                </ul>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.communicationSkills">
+                <legend>Communication Skills</legend>
+                <ul>
+                    <li *ngFor="let skill of article.activeSection.communicationSkills"
+                        [innerHTML]="skill"></li>
+                </ul>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.digitalSkills">
+                <legend>Digital Skills</legend>
+                <table>
+                    <tbody>
+                        <tr *ngFor="let skill of article.activeSection.digitalSkills.skills">
+                            <td [innerHTML]="skill.name"></td>
+                            <td><a [attr.aria-label]="skill.tooltip.label"
+                                   [ngClass]="skill.tooltip.config || tooltipConfig"
+                                   [innerHTML]="skill.tooltip.text"></a></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                <a href="{{article.activeSection.digitalSkills.link.url}}"
+                                   target="_blank"
+                                   [innerHTML]="article.activeSection.digitalSkills.link.title"></a>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr/>
+                <ul *ngIf="article.activeSection.digitalSkills.extra">
+                    <li *ngFor="let skill of article.activeSection.digitalSkills.extra"
+                        [innerHTML]="skill">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.languageSkills">
+                <legend>Language Skills</legend>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td class="head">Mother tongue:</td>
+                        <td colspan="2">{{article.activeSection.languageSkills.motherTongue}}</td>
+                    </tr>
+                    </tbody>
+                    <tbody *ngFor="let lang of article.activeSection.languageSkills.languages">
+                    <tr>
+                        <td colspan="3">{{lang.name}} | {{lang.assessment}}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="head">Understanding</td>
+                        <td>Listening</td>
+                        <td><a [attr.aria-label]="lang.understanding.listening.label"
+                               [ngClass]="lang.understanding.listening.config || tooltipConfig"
+                               [innerHTML]="lang.understanding.listening.text"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Reading</td>
+                        <td><a [attr.aria-label]="lang.understanding.reading.label"
+                               [ngClass]="lang.understanding.reading.config || tooltipConfig"
+                               [innerHTML]="lang.understanding.reading.text"></a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="head">Spoken</td>
+                        <td>Interaction</td>
+                        <td>
+                            <a [attr.aria-label]="lang.spoken.interaction.label"
+                               [ngClass]="lang.spoken.interaction.config || tooltipConfig"
+                               [innerHTML]="lang.spoken.interaction.text"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Production</td>
+                        <td><a [attr.aria-label]="lang.spoken.production.label"
+                               [ngClass]="lang.spoken.production.config || tooltipConfig"
+                               [innerHTML]="lang.spoken.production.text"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="head">Writing</td>
+                        <td></td>
+                        <td><a [attr.aria-label]="lang.writing.label"
+                               [ngClass]="lang.writing.config || tooltipConfig"
+                               [innerHTML]="lang.writing.text"></a></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <a href="{{article.activeSection.languageSkills.link.url}}"
+                                   target="_blank"
+                                   [innerHTML]="article.activeSection.languageSkills.link.title"></a>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+            <fieldset *ngIf="article.activeSection.otherSkills">
+                <legend>Other Skills</legend>
+                <ul>
+                    <li *ngFor="let skill of article.activeSection.otherSkills"
+                        [innerHTML]="skill"></li>
+                </ul>
+            </fieldset>
+
+
+        </div>
+        <div class="inner"
+             *ngIf="!article.sections">
+            <ul *ngIf="article.actions"
+                [innerHTML]="article.actions"
+                class="actions spinX float-right"></ul>
+            <header><h1 [innerHTML]="article.header.title"></h1>
+                <p [innerHTML]="article.header.subtitle"></p></header>
+            <nav id="nav"
+                 *ngIf="article.nav"
+                 [innerHTML]="article.nav"></nav>
+            <div *ngIf="article.body"
+                 [innerHTML]="article.body"></div>
+            <ul class="icons"
+                *ngIf="article.icons"
+                [innerHTML]="article.icons"></ul>
+        </div>
+    </div>
+</article>
+<footer id="footer" [innerHTML]="footer"></footer>
