@@ -120,6 +120,28 @@ export const ARTICLES: Article[] = [
         actions: '<li><a href="#home" class="button small back">Back</a></li>',
         sections: [
             {
+                label: 'Smell',
+                title: 'Quo Vadis',
+                content: [
+                    'By the end of 2008 I was a young Romanian architect trying to make a name for myself. I loved' +
+                    ' being an architect: it was hard, rewarding work but I enjoyed being part of the new wave of' +
+                    ' young architects trying to close the gap between Romanian and West European architecture.',
+                    'Little did I know about the effects the Great Recession started by mid 2007 in United States' +
+                    ' would have upon European and Romanian economies. It hit us so hard that the real estate market' +
+                    ' froze for 4 years, effectively bankrupting the vast majority of the construction sector, after an unprecendented rise since 2005. This left most Romanian architects out of work until late 2012.',
+                    'So, with a lot of time on my hands, I swithced from designing for real space to virtual space.' +
+                    ' The more I practiced, the more I liked it. In web you can get your dreams and ideas built in a matter of days. You rarely have to wrestle tight budgets or the laws of physics. It really feels like in web the only limit is your imagination.',
+                    'Of course, I was also fortunate enough to find a small but <a href="//evolution.ro">very' +
+                    ' ambitious team</a> who shared mypassion for freedom designing the web and who tought me' +
+                    ' everything I needed and wanted to learn.',
+                    'And here I am, after 8 years, able to do both but not wanting to go back. I love my current' +
+                    ' work, I enjoy the pace at wich I learn new things every day and I really do not want to trade this kind of freedom for the kind of stress one gets as an architect.',
+                    'This is who I am now. I just love the smell of code... ',
+                    '<a href="//websiter.ro/cv">}<((((*></a>'
+                ]
+
+            },
+            {
                 label: 'Technology',
                 title: 'Technological skills',
                 programmingSkills: [

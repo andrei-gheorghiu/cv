@@ -46,6 +46,11 @@
                 <legend>Business</legend>
                 <div [innerHTML]="article.activeSection.business"></div>
             </fieldset>
+            <fieldset *ngIf="article.activeSection.content">
+                <legend>}<(((*></legend>
+                <p *ngFor="let p of article.activeSection.content"
+                   [innerHTML]="p"></p>
+            </fieldset>
             <fieldset *ngIf="article.activeSection.activity">
                 <legend>Activity</legend>
                 <ul>
