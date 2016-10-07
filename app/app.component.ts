@@ -2,8 +2,6 @@ import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { ArticleService } from './article.service';
 import { Article } from './app.types';
 
-var $:any;
-
 @Component({
     selector: '[curriculumVitae]',
     providers: [ArticleService],

@@ -1823,6 +1823,9 @@ fieldset hr {
     position: relative;
     z-index: 1;
 }
+.image + .content.invisible {
+    position: static;
+}
 .menuButton {
     position: absolute;
     right: 0;

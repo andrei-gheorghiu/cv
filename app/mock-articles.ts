@@ -1,6 +1,6 @@
-import {ArticleOptions} from './app.types';
+import {Tooltip, Article} from './app.types';
 
-export const ARTICLES:ArticleOptions[] = [
+export const ARTICLES: Article[] = [
     {
         id: 'home',
         classes: ['panel', 'special'],
@@ -144,30 +144,39 @@ export const ARTICLES:ArticleOptions[] = [
                             name: 'Information processing',
                             tooltip: {
                                 text: 'Proficient user',
-                                label: 'I can use advanced search strategies (e.g. using search operators) to find reliable information on the internet. I can use web feeds (like RSS) to be updated with content I am interested in. I can assess the validity and credibility of information using a range of criteria. I am aware of new advances in information search, storage and retrieval. Ι can save information found on the internet in different formats. I can use cloud information storage services.' }
-                        }, {
+                                label: 'I can use advanced search strategies (e.g. using search operators) to find reliable information on the internet. I can use web feeds (like RSS) to be updated with content I am interested in. I can assess the validity and credibility of information using a range of criteria. I am aware of new advances in information search, storage and retrieval. Ι can save information found on the internet in different formats. I can use cloud information storage services.'
+                            }
+                        },
+                        {
                             name: 'Content creation',
                             tooltip: {
-                                text:'Proficient user',
-                                label:'I can produce or modify complex, multimedia content in different formats, using a variety of digital platforms, tools and environments. I can create a website using a programming language. I can use advanced formatting functions of different tools (e.g. mail merge, merging documents of different formats, using advanced formulas, macros). I know how to apply licences and copyrights. I can use several programming languages. I know how to design, create and modify databases with a computer tool.' },
-                        }, {
+                                text: 'Proficient user',
+                                label: 'I can produce or modify complex, multimedia content in different formats, using a variety of digital platforms, tools and environments. I can create a website using a programming language. I can use advanced formatting functions of different tools (e.g. mail merge, merging documents of different formats, using advanced formulas, macros). I know how to apply licences and copyrights. I can use several programming languages. I know how to design, create and modify databases with a computer tool.'
+                            }
+                        },
+                        {
                             name: 'Communication',
                             tooltip: {
-                                text:'Independent user',
-                                label:'I can use advanced features of several communication tools (e.g. using Voice over IP and sharing files). I can use collaboration tools and contribute to e.g. shared documents/files someone else has created. I can use some features of online services (e.g. public services, e-banking, online shopping). I pass on or share knowledge with others online (e.g. through social networking tools or in online communities). I am aware of and use the rules of online communication ("netiquette").' }
-                        }, {
+                                text: 'Independent user',
+                                label: 'I can use advanced features of several communication tools (e.g. using Voice over IP and sharing files). I can use collaboration tools and contribute to e.g. shared documents/files someone else has created. I can use some features of online services (e.g. public services, e-banking, online shopping). I pass on or share knowledge with others online (e.g. through social networking tools or in online communities). I am aware of and use the rules of online communication ("netiquette").'
+                            }
+                        },
+                        {
                             name: 'Problem solving',
                             tooltip: {
-                                text:'Proficient',
-                                label:'I can solve almost all problems that arise when using digital technology. I can choose the right tool, device, application, software or service to solve (non-technical) problems. I am aware of new technological developments. I understand how new tools work. I frequently update my digital skills.' }
-                        }, {
+                                text: 'Proficient',
+                                label: 'I can solve almost all problems that arise when using digital technology. I can choose the right tool, device, application, software or service to solve (non-technical) problems. I am aware of new technological developments. I understand how new tools work. I frequently update my digital skills.'
+                            }
+                        },
+                        {
                             name: 'Safety',
                             tooltip: {
                                 text: 'Proficient',
-                                label: 'I frequently check the security configuration and systems of my devices and/or of the applications I use. I know how to react if my computer is infected by a virus. I can configure or modify the firewall and security settings of my digital devices. I know how to encrypt e-mails or files. I can apply filters to spam e-mails. To avoid health problems (physical and psychological), I make reasonable use of information and communication technology. I have an informed stance on the impact of digital technologies on everyday life, online consumption, and the environment.' }
+                                label: 'I frequently check the security configuration and systems of my devices and/or of the applications I use. I know how to react if my computer is infected by a virus. I can configure or modify the firewall and security settings of my digital devices. I know how to encrypt e-mails or files. I can apply filters to spam e-mails. To avoid health problems (physical and psychological), I make reasonable use of information and communication technology. I have an informed stance on the impact of digital technologies on everyday life, online consumption, and the environment.'
+                            }
                         }
                     ],
-                    extra: [
+                    extras: [
                         'good command of office suite (word processors, spread sheets, presentation software)',
                         'good command of photo editing software gained as an architect and full stack developer (including theme and layout creation for several websites)'
                     ],
@@ -198,27 +207,27 @@ export const ARTICLES:ArticleOptions[] = [
                             name: 'English',
                             understanding: {
                                 listening: {
-                                    text:'C2',
-                                    label:'I have no difficulty in understanding any kind of spoken language, whether live or broadcast, even when delivered at fast native speed, provided I have some time to get familiar with the accent.'
+                                    text: 'C2',
+                                    label: 'I have no difficulty in understanding any kind of spoken language, whether live or broadcast, even when delivered at fast native speed, provided I have some time to get familiar with the accent.'
                                 },
                                 reading: {
-                                    text:'C2',
-                                    label:'I can read with ease virtually all forms of the written language, including abstract, structurally or linguistically complex texts such as manuals, specialised articles and literary works.'
+                                    text: 'C2',
+                                    label: 'I can read with ease virtually all forms of the written language, including abstract, structurally or linguistically complex texts such as manuals, specialised articles and literary works.'
                                 }
                             },
                             spoken: {
                                 interaction: {
-                                    text:'C2',
-                                    label:'I can take part effortlessly in any conversation or discussion and have a good familiarity with idiomatic expressions and colloquialisms. I can express myself fluently and convey finer shades of meaning precisely. If I do have a problem I can backtrack and restructure around the difficulty so smoothly that other people are hardly aware of it.'
+                                    text: 'C2',
+                                    label: 'I can take part effortlessly in any conversation or discussion and have a good familiarity with idiomatic expressions and colloquialisms. I can express myself fluently and convey finer shades of meaning precisely. If I do have a problem I can backtrack and restructure around the difficulty so smoothly that other people are hardly aware of it.'
                                 },
                                 production: {
-                                    text:'C1',
-                                    label:'I can present clear, detailed descriptions of complex subjects integrating sub-themes, developing particular points and rounding off with an appropriate conclusion.'
+                                    text: 'C1',
+                                    label: 'I can present clear, detailed descriptions of complex subjects integrating sub-themes, developing particular points and rounding off with an appropriate conclusion.'
                                 }
                             },
                             writing: {
-                                text:'C2',
-                                label:'I can write clear, smoothly-flowing text in an appropriate style. I can write complex letters, reports or articles which present a case with an effective logical structure which helps the recipient to notice and remember significant points. I can write summaries and reviews of professional or literary works.'
+                                text: 'C2',
+                                label: 'I can write clear, smoothly-flowing text in an appropriate style. I can write complex letters, reports or articles which present a case with an effective logical structure which helps the recipient to notice and remember significant points. I can write summaries and reviews of professional or literary works.'
                             },
                             assessment: 'Self assessment'
                         },
@@ -226,30 +235,30 @@ export const ARTICLES:ArticleOptions[] = [
                             name: 'French',
                             understanding: {
                                 listening: {
-                                    text:'B2',
-                                    label:'I can understand extended speech and lectures and follow even complex lines of argument provided the topic is reasonably familiar. I can understand most TV news and current affairs programmes. I can understand the majority of films in standard dialect.'
+                                    text: 'B2',
+                                    label: 'I can understand extended speech and lectures and follow even complex lines of argument provided the topic is reasonably familiar. I can understand most TV news and current affairs programmes. I can understand the majority of films in standard dialect.'
                                 },
                                 reading: {
-                                    text:'B1',
-                                    label:'I can understand texts that consist mainly of high frequency everyday or job-related language. I can understand the description of events, feelings and wishes in personal letters.'
+                                    text: 'B1',
+                                    label: 'I can understand texts that consist mainly of high frequency everyday or job-related language. I can understand the description of events, feelings and wishes in personal letters.'
                                 }
                             },
                             spoken: {
                                 interaction: {
-                                    text:'B2',
-                                    label:'I can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible. I can take an active part in discussion in familiar contexts, accounting for and sustaining my views.'
+                                    text: 'B2',
+                                    label: 'I can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible. I can take an active part in discussion in familiar contexts, accounting for and sustaining my views.'
                                 },
                                 production: {
-                                    text:'B1',
-                                    label:'I can connect phrases in a simple way in order to describe experiences and events, my dreams, hopes and ambitions. I can briefly give reasons and explanations for opinions and plans. I can narrate a story or relate the plot of a book or film and describe my reactions.'
+                                    text: 'B1',
+                                    label: 'I can connect phrases in a simple way in order to describe experiences and events, my dreams, hopes and ambitions. I can briefly give reasons and explanations for opinions and plans. I can narrate a story or relate the plot of a book or film and describe my reactions.'
                                 }
                             },
                             writing: {
-                                text:'A2',
-                                label:'I can write short, simple notes and messages. I can write a very simple personal letter, for example thanking someone for something.'
+                                text: 'A2',
+                                label: 'I can write short, simple notes and messages. I can write a very simple personal letter, for example thanking someone for something.'
                             },
                             assessment: 'Self assessment'
-                        },
+                        }
                     ]
                 },
                 communicationSkills: [

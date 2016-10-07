@@ -89,7 +89,7 @@
                         <tr *ngFor="let skill of article.activeSection.digitalSkills.skills">
                             <td [innerHTML]="skill.name"></td>
                             <td><a [attr.aria-label]="skill.tooltip.label"
-                                   [ngClass]="skill.tooltip.config || tooltipConfig"
+                                   [ngClass]="skill.tooltip.conf || tooltipConfig"
                                    [innerHTML]="skill.tooltip.text"></a></td>
                         </tr>
                     </tbody>

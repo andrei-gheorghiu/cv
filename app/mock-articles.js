@@ -143,30 +143,39 @@ exports.ARTICLES = [
                             name: 'Information processing',
                             tooltip: {
                                 text: 'Proficient user',
-                                label: 'I can use advanced search strategies (e.g. using search operators) to find reliable information on the internet. I can use web feeds (like RSS) to be updated with content I am interested in. I can assess the validity and credibility of information using a range of criteria. I am aware of new advances in information search, storage and retrieval. Ι can save information found on the internet in different formats. I can use cloud information storage services.' }
-                        }, {
+                                label: 'I can use advanced search strategies (e.g. using search operators) to find reliable information on the internet. I can use web feeds (like RSS) to be updated with content I am interested in. I can assess the validity and credibility of information using a range of criteria. I am aware of new advances in information search, storage and retrieval. Ι can save information found on the internet in different formats. I can use cloud information storage services.'
+                            }
+                        },
+                        {
                             name: 'Content creation',
                             tooltip: {
                                 text: 'Proficient user',
-                                label: 'I can produce or modify complex, multimedia content in different formats, using a variety of digital platforms, tools and environments. I can create a website using a programming language. I can use advanced formatting functions of different tools (e.g. mail merge, merging documents of different formats, using advanced formulas, macros). I know how to apply licences and copyrights. I can use several programming languages. I know how to design, create and modify databases with a computer tool.' },
-                        }, {
+                                label: 'I can produce or modify complex, multimedia content in different formats, using a variety of digital platforms, tools and environments. I can create a website using a programming language. I can use advanced formatting functions of different tools (e.g. mail merge, merging documents of different formats, using advanced formulas, macros). I know how to apply licences and copyrights. I can use several programming languages. I know how to design, create and modify databases with a computer tool.'
+                            }
+                        },
+                        {
                             name: 'Communication',
                             tooltip: {
                                 text: 'Independent user',
-                                label: 'I can use advanced features of several communication tools (e.g. using Voice over IP and sharing files). I can use collaboration tools and contribute to e.g. shared documents/files someone else has created. I can use some features of online services (e.g. public services, e-banking, online shopping). I pass on or share knowledge with others online (e.g. through social networking tools or in online communities). I am aware of and use the rules of online communication ("netiquette").' }
-                        }, {
+                                label: 'I can use advanced features of several communication tools (e.g. using Voice over IP and sharing files). I can use collaboration tools and contribute to e.g. shared documents/files someone else has created. I can use some features of online services (e.g. public services, e-banking, online shopping). I pass on or share knowledge with others online (e.g. through social networking tools or in online communities). I am aware of and use the rules of online communication ("netiquette").'
+                            }
+                        },
+                        {
                             name: 'Problem solving',
                             tooltip: {
                                 text: 'Proficient',
-                                label: 'I can solve almost all problems that arise when using digital technology. I can choose the right tool, device, application, software or service to solve (non-technical) problems. I am aware of new technological developments. I understand how new tools work. I frequently update my digital skills.' }
-                        }, {
+                                label: 'I can solve almost all problems that arise when using digital technology. I can choose the right tool, device, application, software or service to solve (non-technical) problems. I am aware of new technological developments. I understand how new tools work. I frequently update my digital skills.'
+                            }
+                        },
+                        {
                             name: 'Safety',
                             tooltip: {
                                 text: 'Proficient',
-                                label: 'I frequently check the security configuration and systems of my devices and/or of the applications I use. I know how to react if my computer is infected by a virus. I can configure or modify the firewall and security settings of my digital devices. I know how to encrypt e-mails or files. I can apply filters to spam e-mails. To avoid health problems (physical and psychological), I make reasonable use of information and communication technology. I have an informed stance on the impact of digital technologies on everyday life, online consumption, and the environment.' }
+                                label: 'I frequently check the security configuration and systems of my devices and/or of the applications I use. I know how to react if my computer is infected by a virus. I can configure or modify the firewall and security settings of my digital devices. I know how to encrypt e-mails or files. I can apply filters to spam e-mails. To avoid health problems (physical and psychological), I make reasonable use of information and communication technology. I have an informed stance on the impact of digital technologies on everyday life, online consumption, and the environment.'
+                            }
                         }
                     ],
-                    extra: [
+                    extras: [
                         'good command of office suite (word processors, spread sheets, presentation software)',
                         'good command of photo editing software gained as an architect and full stack developer (including theme and layout creation for several websites)'
                     ],
@@ -248,7 +257,7 @@ exports.ARTICLES = [
                                 label: 'I can write short, simple notes and messages. I can write a very simple personal letter, for example thanking someone for something.'
                             },
                             assessment: 'Self assessment'
-                        },
+                        }
                     ]
                 },
                 communicationSkills: [
