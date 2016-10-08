@@ -13,7 +13,7 @@ var article_service_1 = require('./article.service');
 var AppComponent = (function () {
     function AppComponent(articleService) {
         this.articleService = articleService;
-        this.footer = '<p class="copyright">&copy; Andrei Gheorghiu</p>';
+        this.footer = '<div class="copyright">&copy; Andrei Gheorghiu</div>';
         this.tooltipHandle = '<i class="fa fa-2x fa-question-circle" aria-hidden="true"></i>';
         this.tooltipConfig = 'hint--large hint--rounded hint--top-left';
     }

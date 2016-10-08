@@ -1079,40 +1079,17 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 }
 
 #wrapper {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: flex;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -moz-perspective: 1000px;
-    -webkit-perspective: 1000px;
-    -ms-perspective: 1000px;
+    justify-content: flex-end;
     perspective: 1000px;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 3em;
     width: 100%;
+}
+.no-spacing {
+    letter-spacing: normal;
 }
 
 @media screen and (max-width: 1280px) {

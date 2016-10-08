@@ -1,4 +1,4 @@
-import {Tooltip, Article} from './app.types';
+import {Tooltip, Article} from './app.type';
 
 export const ARTICLES: Article[] = [
     {
@@ -121,7 +121,7 @@ export const ARTICLES: Article[] = [
         actions: '<li><a href="#home" class="button small back">Back</a></li>',
         sections: [
             {
-                label: ">\<\\*\>",
+                label: '<span class="no-spacing">}&lt;(((*&gt;</span>',
                 title: 'Quo Vadis?',
                 content: [
                     'By the end of 2008 I was a young Romanian architect trying to make a name for myself. And I' +
