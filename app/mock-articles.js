@@ -104,7 +104,8 @@ exports.ARTICLES = [
                 },
                 business: 'Distribution of imported goods',
                 activity: [
-                    'Developed and maintained a distribution network for LEGO toys in Romania, provisioning 60+ shops in 5 (out of 45) Romanian districts',
+                    'Developed and maintained a distribution network for LEGO toys in Romania, provisioning 60+' +
+                        ' shops in 5 (out of 42) Romanian districts',
                 ],
             },
         ],
