@@ -1745,7 +1745,7 @@ body.is-loading-1 .panel > .content {
 }
 
 #footer.inactive {
-    opacity: 0;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1680px) {
@@ -1770,7 +1770,7 @@ body.is-loading-1 .panel > .content {
 }
 
 body.is-loading-0 #footer {
-    opacity: 0;
+    opacity: 1;
 }
 .image>.content.homeTitle h1 {
     margin: 0;

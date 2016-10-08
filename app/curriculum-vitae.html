@@ -4,13 +4,12 @@
     <div class="image"
          [ngStyle]="{'background':'transparent url('+article.image+') center center no-repeat /cover'}">
         <div [ngClass]="{'content':true,'homeTitle':article.id=='home'}"
-             *ngIf="article.sections || article.id=='home'">
-            <div class="inner"
+             *ngIf="article.sections">
+            <!--<div class="inner"
                  *ngIf="article.id=='home'">
                 <h1>Curriculum Vitae</h1>
-            </div>
-            <div class="inner"
-                 *ngIf="article.sections">
+            </div>-->
+            <div class="inner">
                 <header *ngIf="article.sections">
                     <h1 [innerHTML]="article.header.title"></h1>
                     <p [innerHTML]="article.header.subtitle"></p></header>

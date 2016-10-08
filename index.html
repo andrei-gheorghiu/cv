@@ -24,11 +24,71 @@
             console.error(err);
         });
     </script>
+    <style>
+        @-webkit-keyframes rotating /* Safari and Chrome */ {
+            from {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes rotating {
+            from {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        .rotating {
+            -webkit-animation: rotating 2s linear infinite;
+            -moz-animation: rotating 2s linear infinite;
+            -ms-animation: rotating 2s linear infinite;
+            -o-animation: rotating 2s linear infinite;
+            animation: rotating 2s linear infinite;
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            font-size: 13px;
+            line-height:15px;
+            position: relative;
+            top: 2px;
+            left: -1px;
+        }
+        body.is-loading-0.is-loading-1 #wrapper {
+            max-height: 50vh;
+            overflow: hidden;
+        }
+        body.is-loading-0.is-loading-1 #wrapper article {
+            max-height: 0;
+        }
+
+        body #wrapper article {
+            max-height: none;
+        }
+    </style>
 </head>
 
 <body class="is-loading-0 is-loading-1">
 <div id="wrapper" curriculumVitae>
-    <footer id="footer"><p class="copyright">&copy; Andrei Gheorghiu</p></footer>
+    <footer id="footer"><p class="copyright"><span class="rotating">&copy;</span> Andrei Gheorghiu</p></footer>
 </div>
 <script type="application/javascript">
     window.cvInit = function(){
