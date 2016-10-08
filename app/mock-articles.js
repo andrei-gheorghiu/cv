@@ -126,7 +126,7 @@ exports.ARTICLES = [
                 content: [
                     'By the end of 2008 I was a young Romanian architect trying to make a name for myself. And I' +
                         ' loved it: it was hard, rewarding work and I enjoyed being part of the new wave of architects,' +
-                        ' who were closing the gap between Romanian and western-european architecture.<br />Great times.',
+                    ' who were closing the gap between Romanian and western-european architecture.',
                     'Little did we know about the effects the Great Recession (started by mid `07 in US) would have' +
                         ' upon European and Romanian economies. It hit us so hard the real-estate market instantly' +
                         ' collapsed, freezing for about 4 years, bankrupting the vast majority of the construction' +
@@ -148,7 +148,7 @@ exports.ARTICLES = [
             },
             {
                 label: 'Technology',
-                title: '[Techno]logical skills',
+                title: '&lt;Techno>logical skills',
                 programmingSkills: [
                     'good programming',
                     'good (excellent on request) code readability',
