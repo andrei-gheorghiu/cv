@@ -150,7 +150,7 @@ export const ARTICLES: Article[] = [
             },
             {
                 label: 'Technology',
-                title: '[Techno]logical skills',
+                title: '&lt;Techno>logical skills',
                 programmingSkills: [
                     'good programming',
                     'good (excellent on request) code readability',
