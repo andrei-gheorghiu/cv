@@ -126,7 +126,7 @@ export const ARTICLES: Article[] = [
                 content: [
                     'By the end of 2008 I was a young Romanian architect trying to make a name for myself. And I' +
                     ' loved it: it was hard, rewarding work and I enjoyed being part of the new wave of architects,' +
-                    ' who were closing the gap between Romanian and West European architecture.<br />Great times.',
+                    ' who were closing the gap between Romanian and western-european architecture.<br />Great times.',
                     'Little did we know about the effects the Great Recession (started by mid `07 in US) would have' +
                     ' upon European and Romanian economies. It hit us so hard the real-estate market instantly' +
                     ' collapsed, freezing for about 4 years, bankrupting the vast majority of the construction' +
@@ -135,7 +135,8 @@ export const ARTICLES: Article[] = [
                     ' space. The more I practiced, the more I liked it. In web you can get your dreams and ideas' +
                     ' built in a matter of days. And you rarely have to wrestle tight budgets or the laws of' +
                     ' physics. It really feels like the only limit is your own imagination.',
-                    'Well, I was also fortunate enough to find a small but <a href="//evolution.ro">very ambitious' +
+                    'Well, I was also fortunate enough to find a small but <a href="http://evolution.ro">very' +
+                    ' ambitious' +
                     ' team</a> who shared my passion for freedom designing web, who taught me most of what I needed' +
                     ' and wanted to learn.',
                     'And here I am, 8 years later, able to do both and not wanting to go back. I love my current' +
