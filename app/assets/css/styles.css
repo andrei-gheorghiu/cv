@@ -1098,17 +1098,24 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
     -moz-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -moz-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
     perspective: 1000px;
     min-height: 80vh;
     padding: 3em;
     width: 100%;
+}
+.is-loading-0 #wrapper {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 .no-spacing {
     letter-spacing: normal;
