@@ -10,9 +10,10 @@ exports.ARTICLES = [
         image: './app/assets/images/pic04.jpg',
         icons: '<ul class="icons">' +
             '<li><a href="http://stackoverflow.com/users/1891677/andrei-gheorghiu?tab=topactivity" class="icon' +
-        ' fa-stack-overflow" title="StackOverflow"><span class="label">StackOverflow</span></a></li>' +
-            '<li><a href="https://github.com/andrei-gheorghiu" class="icon fa-github" title="Github profile"><span class="label">GitHub</span></a></li>' +
-            '<li><a href="https://www.facebook.com/a.h.gheorghiu" class="icon fa-facebook" title="Facebook profile (I check it once a month... roughly)"><span class="label">Facebook</span></a></li>' +
+            ' fa-stack-overflow" title="StackOverflow"><span class="label">StackOverflow</span></a></li>' +
+            '<li><a href="https://github.com/andrei-gheorghiu" class="icon fa-github" title="Github"><span class="label">GitHub</span></a></li>' +
+            '<li><a href="https://www.facebook.com/a.h.gheorghiu" class="icon fa-facebook" title="Facebook (I only' +
+            ' checkt it once a month... roughly)"><span class="label">Facebook</span></a></li>' +
             '<li><a href="/#contact" class="icon fa-envelope" title="Fastest way to reach me, by far"><span class="label">Email</span></a></li>' +
             '</ul>',
         nav: '<ul class="actions vertical special spinY">' +
@@ -124,7 +125,7 @@ exports.ARTICLES = [
                 content: [
                     'By the end of 2008 I was a young Romanian architect trying to make a name for myself. And I' +
                         ' loved it: it was hard, rewarding work and I enjoyed being part of the new wave of architects,' +
-                    ' who were closing the gap between Romanian and western-european architecture.<br />Great times.',
+                        ' who were closing the gap between Romanian and western-european architecture.<br />Great times.',
                     'Little did we know about the effects the Great Recession (started by mid `07 in US) would have' +
                         ' upon European and Romanian economies. It hit us so hard the real-estate market instantly' +
                         ' collapsed, freezing for about 4 years, bankrupting the vast majority of the construction' +
@@ -134,7 +135,7 @@ exports.ARTICLES = [
                         ' built in a matter of days. And you rarely have to wrestle tight budgets or the laws of' +
                         ' physics. It really feels like the only limit is your own imagination.',
                     'Well, I was also fortunate enough to find a small but <a href="http://evolution.ro">very' +
-                    ' ambitious' +
+                        ' ambitious' +
                         ' team</a> who shared my passion for freedom designing web, who taught me most of what I needed' +
                         ' and wanted to learn.',
                     'And here I am, 8 years later, able to do both and not wanting to go back. I love my current' +
@@ -146,7 +147,7 @@ exports.ARTICLES = [
             },
             {
                 label: 'Technology',
-                title: 'Technological skills',
+                title: '(Techno)logical skills',
                 programmingSkills: [
                     'good programming',
                     'good (excellent on request) code readability',
