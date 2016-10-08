@@ -148,7 +148,7 @@ exports.ARTICLES = [
             },
             {
                 label: 'Technology',
-                title: '(Techno)logical skills',
+                title: '[Techno]logical skills',
                 programmingSkills: [
                     'good programming',
                     'good (excellent on request) code readability',
