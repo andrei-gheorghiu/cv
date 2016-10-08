@@ -11,8 +11,7 @@ export const ARTICLES: Article[] = [
         image: './app/assets/images/pic04.jpg',
         icons: '<ul class="icons">' +
         '<li><a href="http://stackoverflow.com/users/1891677/andrei-gheorghiu?tab=topactivity" class="icon' +
-        ' fa-stack-overflow" title="StackOverflow Profile"><span class="label">StackOverflow Profile</span></a></li>' +
-        '<li><a href="http://stackoverflow.com/cv/andrei-gheorghiu" class="icon fa-stack-overflow orange" title="StackOverflow CV"><span class="label">StackOverflow CV</span></a></li>' +
+        ' fa-stack-overflow" title="StackOverflow"><span class="label">StackOverflow</span></a></li>' +
         '<li><a href="https://github.com/andrei-gheorghiu" class="icon fa-github" title="Github profile"><span class="label">GitHub</span></a></li>' +
         '<li><a href="https://www.facebook.com/a.h.gheorghiu" class="icon fa-facebook" title="Facebook profile (I check it once a month... roughly)"><span class="label">Facebook</span></a></li>' +
         '<li><a href="/#contact" class="icon fa-envelope" title="Fastest way to reach me, by far"><span class="label">Email</span></a></li>' +
