@@ -20,7 +20,7 @@ exports.ARTICLES = [
             '<li><a href="#work" class="button">Experience</a></li>' +
             '<li><a href="#about" class="button">About</a></li>' +
             '<li><a href="#education" class="button">Education</a></li>' +
-        '</ul>'
+            '</ul>',
     },
     {
         id: 'work',
@@ -52,10 +52,10 @@ exports.ARTICLES = [
                     'Development of full websites for small /medium clients (WordPress)',
                     'Mobile apps graphical interface design (Android, IoS) - theming, UI, responsiveness',
                     'Development of pure HTML + CSS + JavaScript themes, from scratch or based on popular CSS frameworks – Bootstrap, HTML5UP, MDL',
-                    'WordPress premium e-commerce theme conversion for use with web applications based on Yii2 or Smarty'
+                    'WordPress premium e-commerce theme conversion for use with web applications based on Yii2 or Smarty',
                 ],
                 technology: ['Yii2', 'AngularJS', 'Ionic', 'Angular 2', 'Ionic 2', 'WordPress', 'Smarty', 'Bootstrap', 'jQuery', 'Angular Material', 'Material Design Lite', 'Hammer.js', 'Git', 'SVN'],
-                languages: ['CSS', 'JavaScript', 'TypeScript', 'php']
+                languages: ['CSS', 'JavaScript', 'TypeScript', 'php'],
             },
             {
                 label: '2008 - 2012',
@@ -65,10 +65,10 @@ exports.ARTICLES = [
                 },
                 business: 'Web development',
                 activity: [
-                    '<h4>2010 – 2012</h4> Volunteered as theme support for the most popular (excluding core themes) open source WordPress theme at the time: Customizr. Also contributed to theme development (initiated and developed codebase for making it multi-language compatible) – which resulted in a long lasting friendship with theme creator, Nicolas Guillaume.'
+                    '<h4>2010 – 2012</h4> Volunteered as theme support for the most popular (excluding core themes) open source WordPress theme at the time: Customizr. Also contributed to theme development (initiated and developed codebase for making it multi-language compatible) – which resulted in a long lasting friendship with theme creator, Nicolas Guillaume.',
                 ],
                 technology: ['WordPress', 'Bootstrap', 'jQuery'],
-                languages: ['CSS', 'JavaScript', 'php']
+                languages: ['CSS', 'JavaScript', 'php'],
             },
             {
                 label: '2004 - 2008',
@@ -80,8 +80,8 @@ exports.ARTICLES = [
                 },
                 business: 'Architecture, Interior Design, Contract Sales',
                 activity: [
-                    'Design (architecture planning), General Management, Contract Sales'
-                ]
+                    'Design (architecture planning), General Management, Contract Sales',
+                ],
             },
             {
                 label: '1997 – 2004',
@@ -91,8 +91,8 @@ exports.ARTICLES = [
                     address: 'Bucharest, Romania'
                 },
                 activity: [
-                    'City guide, translator and driver for select British Council guests. I was specifically called in for guests with artistic and/or cultural interests (writers, musicians, designers, teachers) mainly because of my extended knowledge in Bucharest’s history of architecture.'
-                ]
+                    'City guide, translator and driver for select British Council guests. I was specifically called in for guests with artistic and/or cultural interests (writers, musicians, designers, teachers) mainly because of my extended knowledge in Bucharest’s history of architecture.',
+                ],
             },
             {
                 label: '1996 – 2001',
@@ -104,10 +104,10 @@ exports.ARTICLES = [
                 },
                 business: 'Distribution of imported goods',
                 activity: [
-                    'Developed and maintained a distribution network for LEGO toys in Romania, provisioning 60+ shops in 5 (out of 45) Romanian districts'
-                ]
-            }
-        ]
+                    'Developed and maintained a distribution network for LEGO toys in Romania, provisioning 60+ shops in 5 (out of 45) Romanian districts',
+                ],
+            },
+        ],
     },
     {
         id: 'about',
@@ -124,22 +124,22 @@ exports.ARTICLES = [
                 title: 'Quo Vadis?',
                 content: [
                     'By the end of 2008 I was a young Romanian architect trying to make a name for myself. And I' +
-                    ' loved it: it was hard, rewarding work and I enjoyed being part of the new wave, trying to' +
-                    ' close the gap between Romanian and Western European architecture.',
-                    'Little did I know about the effects the Great Recession (started by mid 2007 in the States)' +
-                        ' would have upon European and Romanian economies. It hit us so hard the real-estate market' +
-                    ' collapsed, freezing for about 4 years, bankrupting the vast majority of the construction' +
-                    ' sector. This left most Romanian architects out of work until late 2012.',
+                        ' loved it: it was hard, rewarding work and I enjoyed being part of the new wave of architects,' +
+                        ' who were closing the gap between Romanian and West European architecture. Great times.',
+                    'Little did we know about the effects the Great Recession (started by mid `07 in US) would have' +
+                        ' upon European and Romanian economies. It hit us so hard the real-estate market instantly' +
+                        ' collapsed, freezing for about 4 years, bankrupting the vast majority of the construction' +
+                        ' sector. This left most Romanian architects out of work until late 2012.',
                     'So, with a lot of time on my hands, I switched from designing for real space to digital, virtual' +
-                    ' space. The more I practiced, the more I liked it. In web you can get your dreams and ideas' +
-                    ' built in a matter of days. And you rarely have to wrestle tight budgets or the laws of' +
-                    ' physics. It really feels like the only limit is your own imagination.',
+                        ' space. The more I practiced, the more I liked it. In web you can get your dreams and ideas' +
+                        ' built in a matter of days. And you rarely have to wrestle tight budgets or the laws of' +
+                        ' physics. It really feels like the only limit is your own imagination.',
                     'Well, I was also fortunate enough to find a small but <a href="//evolution.ro">very ambitious' +
                         ' team</a> who shared my passion for freedom designing web, who taught me most of what I needed' +
                         ' and wanted to learn.',
                     'And here I am, 8 years later, able to do both and not wanting to go back. I love my current' +
                         ' work, I enjoy the pace at which I learn new things every day and I really don\'t want to trade' +
-                    ' this kind of freedom for the level of stress a regular Romanian architect usually gets.',
+                        ' this kind of freedom for the level of stress a regular Romanian architect usually gets.',
                     'This is who I am now. I just love the smell of code... ',
                     '<a href="http://stackoverflow.com/users/1891677/andrei-gheorghiu?tab=topactivity"> }<((((*> </a>'
                 ]
@@ -215,7 +215,7 @@ exports.ARTICLES = [
                     'good design (graphical creation) capability for both print and digital media (I designed and carried out  to completion several publications and/or advertising campaigns for products or projects I was involved in),',
                     'good command of graphical design software: Corel Suite, Adobe Suite (Photoshop - good, inDesign - decent, Illustrator - decent)',
                     'good logo design capability - I designed several (more than 10) successful logos for Romanian businesses',
-                    'good branding and content copyrighting abilities in both Romanian and English language'
+                    'good branding and content copyrighting abilities in both Romanian and English language',
                 ]
             },
             {
@@ -297,7 +297,7 @@ exports.ARTICLES = [
                 otherSkills: [
                     'Driving licence: A, B'
                 ]
-            }
+            },
         ]
     },
     {
