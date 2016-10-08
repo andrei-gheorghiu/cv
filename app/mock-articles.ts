@@ -1,4 +1,4 @@
-import {Tooltip, Article} from './app.type';
+import {Article} from "./app.type";
 
 export const ARTICLES: Article[] = [
     {
@@ -125,23 +125,22 @@ export const ARTICLES: Article[] = [
                 title: 'Quo Vadis?',
                 content: [
                     'By the end of 2008 I was a young Romanian architect trying to make a name for myself. And I' +
-                    ' loved it: it was hard, rewarding work and I enjoyed being part of the new wave of' +
-                    ' architects trying to close the gap between Romanian and West European architecture.',
+                    ' loved it: it was hard, rewarding work and I enjoyed being part of the new wave, trying to' +
+                    ' close the gap between Romanian and Western European architecture.',
                     'Little did I know about the effects the Great Recession (started by mid 2007 in the States)' +
                     ' would have upon European and Romanian economies. It hit us so hard the real-estate market' +
-                    ' froze for 4 years, bankrupting the vast majority of the construction sector, after an' +
-                    ' unprecedented rise since 2005. This left most Romanian architects out of work until late 2012.',
-                    'So, with a lot of time on my hands, I switched from designing for real space to virtual, digital' +
-                    ' space.' +
-                    ' The more I practiced, the more I liked it. In web you can get your dreams and ideas built in a' +
-                    ' matter of days. You rarely have to wrestle tight budgets or the laws of physics. It really' +
-                    ' feels like the only limit is your own imagination.',
+                    ' collapsed, freezing for about 4 years, bankrupting the vast majority of the construction' +
+                    ' sector. This left most Romanian architects out of work until late 2012.',
+                    'So, with a lot of time on my hands, I switched from designing for real space to digital, virtual' +
+                    ' space. The more I practiced, the more I liked it. In web you can get your dreams and ideas' +
+                    ' built in a matter of days. And you rarely have to wrestle tight budgets or the laws of' +
+                    ' physics. It really feels like the only limit is your own imagination.',
                     'Well, I was also fortunate enough to find a small but <a href="//evolution.ro">very ambitious' +
                     ' team</a> who shared my passion for freedom designing web, who taught me most of what I needed' +
                     ' and wanted to learn.',
-                    'And here I am, 8 years later, able to do both but not wanting to go back. I love my current' +
+                    'And here I am, 8 years later, able to do both and not wanting to go back. I love my current' +
                     ' work, I enjoy the pace at which I learn new things every day and I really don\'t want to trade' +
-                    ' this kind of freedom for the level of stress one gets as a Romanian architect.',
+                    ' this kind of freedom for the level of stress a regular Romanian architect usually gets.',
                     'This is who I am now. I just love the smell of code... ',
                     '<a href="http://stackoverflow.com/users/1891677/andrei-gheorghiu?tab=topactivity"> }<((((*> </a>'
                 ]
