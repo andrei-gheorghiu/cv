@@ -53,4 +53,4 @@ var ArticleSection = (function () {
     return ArticleSection;
 }());
 exports.ArticleSection = ArticleSection;
-//# sourceMappingURL=app.types.js.map
+//# sourceMappingURL=app.type.js.map

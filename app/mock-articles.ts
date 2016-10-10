@@ -1,4 +1,4 @@
-import {Tooltip, Article} from './app.types';
+import {Article} from "./app.type";
 
 export const ARTICLES: Article[] = [
     {
@@ -10,10 +10,11 @@ export const ARTICLES: Article[] = [
         },
         image: './app/assets/images/pic04.jpg',
         icons: '<ul class="icons">' +
-        '<li><a href="http://stackoverflow.com/users/1891677/andrei-gheorghiu?tab=profile" class="icon fa-stack-overflow" title="StackOverflow Profile"><span class="label">StackOverflow Profile</span></a></li>' +
-        '<li><a href="http://stackoverflow.com/cv/andrei-gheorghiu" class="icon fa-stack-overflow orange" title="StackOverflow CV"><span class="label">StackOverflow CV</span></a></li>' +
-        '<li><a href="https://github.com/andrei-gheorghiu" class="icon fa-github" title="Github profile"><span class="label">GitHub</span></a></li>' +
-        '<li><a href="https://www.facebook.com/a.h.gheorghiu" class="icon fa-facebook" title="Facebook profile (I check it once a month... roughly)"><span class="label">Facebook</span></a></li>' +
+        '<li><a href="http://stackoverflow.com/users/1891677/andrei-gheorghiu?tab=topactivity" class="icon' +
+        ' fa-stack-overflow" title="StackOverflow"><span class="label">StackOverflow</span></a></li>' +
+        '<li><a href="https://github.com/andrei-gheorghiu" class="icon fa-github" title="Github"><span class="label">GitHub</span></a></li>' +
+        '<li><a href="https://www.facebook.com/a.h.gheorghiu" class="icon fa-facebook" title="Facebook (I only' +
+        ' checkt it once a month... roughly)"><span class="label">Facebook</span></a></li>' +
         '<li><a href="/#contact" class="icon fa-envelope" title="Fastest way to reach me, by far"><span class="label">Email</span></a></li>' +
         '</ul>',
         nav: '<ul class="actions vertical special spinY">' +
@@ -104,7 +105,8 @@ export const ARTICLES: Article[] = [
                 },
                 business: 'Distribution of imported goods',
                 activity: [
-                    'Developed and maintained a distribution network for LEGO toys in Romania, provisioning 60+ shops in 5 (out of 45) Romanian districts',
+                    'Developed and maintained a distribution network for LEGO toys in Romania, provisioning 60+' +
+                    ' shops in 5 (out of 42) Romanian districts',
                 ],
             },
         ],
@@ -120,8 +122,35 @@ export const ARTICLES: Article[] = [
         actions: '<li><a href="#home" class="button small back">Back</a></li>',
         sections: [
             {
+                label: '<span class="no-spacing">}&lt;(((*&gt;</span>',
+                title: 'Quo Vadis?',
+                content: [
+                    'By the end of 2008 I was a young Romanian architect trying to make a name for myself. And I' +
+                    ' loved it: it was hard, rewarding work and I enjoyed being part of the new wave of architects,' +
+                    ' who were closing the gap between Romanian and western-european architecture.',
+                    'Little did we know about the effects the Great Recession (started by mid `07 in US) would have' +
+                    ' upon European and Romanian economies. It hit us so hard the real-estate market instantly' +
+                    ' collapsed, freezing for about 4 years, bankrupting the vast majority of the construction' +
+                    ' sector. This left most Romanian architects out of work until late 2012.',
+                    'So, with a lot of time on my hands, I switched from designing real space to digital, virtual' +
+                    ' space. The more I practiced, the more I liked it. In web you can get your dreams and ideas' +
+                    ' built in a matter of days. And you rarely have to wrestle tight budgets or the laws of' +
+                    ' physics. It really feels like the only limit is your own imagination.',
+                    'Well, I was also fortunate enough to find a small but <a href="http://evolution.ro">very' +
+                    ' ambitious' +
+                    ' team</a> who shared my passion for freedom designing web, who taught me most of what I needed' +
+                    ' and wanted to learn.',
+                    'And here I am, 8 years later, able to do both and not wanting to go back. I love my current' +
+                    ' work, I enjoy the pace at which I learn new things every day and I really don\'t want to trade' +
+                    ' this kind of freedom for the level of stress a regular Romanian architect usually gets.',
+                    'This is who I am now. I just love the smell of code... ',
+                    '<a href="http://stackoverflow.com/users/1891677/andrei-gheorghiu?tab=topactivity"> }<((((*> </a>'
+                ]
+
+            },
+            {
                 label: 'Technology',
-                title: 'Technological skills',
+                title: '&lt;Techno>logical skills',
                 programmingSkills: [
                     'good programming',
                     'good (excellent on request) code readability',

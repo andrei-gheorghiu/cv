@@ -1,6 +1,7 @@
+///<reference path="../typings/index.d.ts"/>
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { ArticleService } from './article.service';
-import { Article } from './app.types';
+import { Article } from './app.type';
 
 @Component({
     selector: '[curriculumVitae]',
@@ -11,7 +12,7 @@ import { Article } from './app.types';
 export class AppComponent implements OnInit, AfterViewChecked {
     abstract;
 
-    footer = '<p class="copyright">&copy; Andrei Gheorghiu</p>';
+    footer = '<div class="copyright">&copy; Andrei Gheorghiu</div>';
     articles:Article[];
     tooltipConfig:string;
 

@@ -55,6 +55,7 @@ export class Article {
 export class ArticleSection {
     label:string;
     title?:string;
+    content?:string[];
     business?:string;
     activity?:string[];
     technology?:string[];

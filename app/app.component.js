@@ -8,12 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+///<reference path="../typings/index.d.ts"/>
 var core_1 = require('@angular/core');
 var article_service_1 = require('./article.service');
 var AppComponent = (function () {
     function AppComponent(articleService) {
         this.articleService = articleService;
-        this.footer = '<p class="copyright">&copy; Andrei Gheorghiu</p>';
+        this.footer = '<div class="copyright">&copy; Andrei Gheorghiu</div>';
         this.tooltipConfig = 'hint--large hint--rounded hint--top-left';
     }
     AppComponent.prototype.getArticles = function () {
